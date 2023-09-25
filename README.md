@@ -20,5 +20,7 @@ Run the following command to start the flink on session mode
 Run the following command to test the connection via Powershell
 ````tnc localhost -port 8081````
 
+Once you’ve started Flink on Docker, you can access the Flink Web UI on localhost:8081
+
 Run the following command to shutdown the flink
 ````docker-compose -f flink.yml down````

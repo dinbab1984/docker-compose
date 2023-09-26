@@ -1,3 +1,5 @@
+# Pre-requisite
+Install docker on your machine
 # Kafka
 
 Run the following command to start the kafka

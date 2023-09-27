@@ -17,6 +17,7 @@ create test topic : ````docker exec kafka kafka-topics --create --topic kafkaTes
 publish messages to test topic : ````docker exec -it kafka kafka-console-producer --topic kafkaTest --broker-list kafka:9092````
 
 consume messages from test topic : ````docker exec -it kafka kafka-console-consumer --topic kafkaTest --from-beginning --bootstrap-server kafka:9092````
+list all topics : ````docker exec kafka kafka-topics --list --bootstrap-server kafka:9092````
 
 Run the following command to shutdown the kafka
 ````docker-compose -f kafka.yml down````

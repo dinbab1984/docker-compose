@@ -2,6 +2,7 @@ version: "3.0"
 services:
   jobmanager:
     image: flink:latest
+    container_name: flink_jobmanager
     ports:
       - "8081:8081"
     command: jobmanager
@@ -12,6 +13,7 @@ services:
 
   taskmanager:
     image: flink:latest
+    container_name: flink_taskmanager
     depends_on:
       - jobmanager
     command: taskmanager

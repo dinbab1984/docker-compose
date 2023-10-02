@@ -22,7 +22,7 @@ consume messages from test topic : ````docker exec -it kafka kafka-console-consu
 list all topics : ````docker exec kafka kafka-topics --list --bootstrap-server kafka:9092````
 
 Run the following command to shutdown the kafka
-````docker-compose -f kafka.yml down````
+````docker-compose -f kafka.yml down -v````
 
 # Flink
 
@@ -35,7 +35,7 @@ Run the following command to test the connection via Powershell
 Once you’ve started Flink on Docker, you can access the Flink Web UI on http://localhost:8081
 
 Run the following command to shutdown the flink
-````docker-compose -f flink.yml down````
+````docker-compose -f flink.yml down -v````
 
 # Postgres
 
@@ -46,4 +46,4 @@ Run the following command to test the connection via Powershell
 ````tnc localhost -port 5432````
 
 Run the following command to shutdown the flink
-````docker-compose -f postgres.yml down````
+````docker-compose -f postgres.yml down -v````
